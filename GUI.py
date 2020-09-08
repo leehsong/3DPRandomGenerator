@@ -3,6 +3,7 @@ from tkinter import messagebox
 import tkinter.font
 import tkinter.ttk as ttk
 import configparser
+import os
 
 
 config=configparser.ConfigParser(strict=False) #설정저장
@@ -10,15 +11,13 @@ config=configparser.ConfigParser(strict=False) #설정저장
 root=Tk()
 root.title("Random")
 root.geometry("350x240")
-root.wm_iconbitmap("kims.ico")
+#root.wm_iconbitmap("kims.ico")
 root.configure(background="#120043")
 
 titleFont=tkinter.font.Font(family="나눔고딕", size=20, weight="bold",slant="roman")
 titleLabel=Label(root,text="KIMS Random Generator",font=titleFont, bg='#120043',fg="#eaeaee",pady="5")
 titleLabel.grid(row=0,column=0,columnspan=2)
 #titleLabel.pack()
-
-
 
 mainFont=tkinter.font.Font(family="나눔고딕", size=12,weight="bold")
 
@@ -55,8 +54,9 @@ entry_Random.insert(END, "5000")
 
 pattern_strs=StringVar()
 entry_pattern=ttk.Combobox(textvariable=pattern_strs, height=0, width=20, state='readonly')
-entry_pattern['value']=("원","원, 삼각형", "원, 삼각형, 사각형", "원, 삼각형, 사각형, 오각형")
+entry_pattern['value']=("원","원+삼각", "원+삼각+사각", "원+삼각+사각+오각", "원+삼각+사각+오각+육각")
 print(entry_pattern.get())
+entry_pattern.current(4)
 entry_pattern.grid(row=2,column=1,columnspan=2) #,sticky="w")
 #entry_pattern.pack()
 
@@ -78,16 +78,8 @@ def stl_act():
 stl_gebox=Checkbutton(root, text="Stl Generate", variable=stl_ge, command=stl_act, bg='#120043',fg="#eaeaee", selectcolor='#120043')
 stl_gebox.grid(row=4, column=0, columnspan=1)
 
-
-
 stl_showbox=Checkbutton(root, text="Stl Show", state='disabled', variable=stl_show, bg='#120043',fg="#eaeaee", selectcolor='#120043')
 stl_showbox.grid(row=4, column=1, columnspan=1)
-
-
-
-
-
-
 
 def btncmd():
     while True:
@@ -97,13 +89,22 @@ def btncmd():
              if a<=0 or b<=0:
                  messagebox.showwarning("경고","Size X Size, Random Seed는 1 이상의 정수만 입력 가능합니다.")
              else:
-                print(entry_size.get(),entry_pattern.get(), entry_Random.get(),stl_ge.get(), stl_show.get())
+                print(entry_size.get(),entry_pattern.current()+1, entry_Random.get(),stl_ge.get(), stl_show.get())
+                execute_LearningSet_Ver(entry_size.get(),entry_pattern.current()+1, entry_Random.get(),stl_ge.get())
+                if (stl_show.get() == 1):
+                    execute_Viewfile(entry_size.get(),entry_pattern.current()+1, entry_Random.get())
              break
         except ValueError:
              messagebox.showwarning("경고","Size X Size, Random Seed는 1 이상의 정수만 입력 가능합니다.")
              break
 
 
+def execute_LearningSet_Ver(nSize, nPattern, nSeed, bSTL):
+    os.system( "python3 LearningSet_Ver.py {Size} {Pattern} {Seed} {Show}".format(Size=nSize, Pattern=nPattern, Seed=nSeed, Show=bSTL))
+def execute_Viewfile(nSize, nPattern, nSeed):
+    strname = "S{size}_T{type}_R{seed}.scad".format(size=nSize, type=nPattern, seed=nSeed)
+    print(strname)
+    os.system( "openscad {filename}".format(filename=strname))
 
 btn= Button(root, text="선택", command=btncmd, bg='#20074f',fg="#eaeaee")
 #btn.pack()
