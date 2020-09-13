@@ -4,8 +4,8 @@ import tkinter.font
 import tkinter.ttk as ttk
 import configparser
 import os
-
-
+import KIMS3DPLearningset
+import pathlib
 config=configparser.ConfigParser(strict=False) #설정저장
 
 root=Tk()
@@ -84,27 +84,34 @@ stl_showbox.grid(row=4, column=1, columnspan=1)
 def btncmd():
     while True:
         try:
-             a = int(entry_size.get())
-             b = int(entry_Random.get())
-             if a<=0 or b<=0:
+             nSize = int(entry_size.get())
+             nSeed = int(entry_Random.get())
+             nType = int(entry_pattern.current())+ 1
+             bSTL  = int(stl_ge.get())
+             if nSize<=0 or nSeed<=0:
                  messagebox.showwarning("경고","Size X Size, Random Seed는 1 이상의 정수만 입력 가능합니다.")
              else:
-                print(entry_size.get(),entry_pattern.current()+1, entry_Random.get(),stl_ge.get(), stl_show.get())
-                execute_LearningSet_Ver(entry_size.get(),entry_pattern.current()+1, entry_Random.get(),stl_ge.get())
-                if (stl_show.get() == 1):
-                    execute_Viewfile(entry_size.get(),entry_pattern.current()+1, entry_Random.get())
+                print("========On Going======")
+                print("========On Going2=====")
+                execute_LearningSet_Ver(nSize, nType, nSeed)
+                if (bSTL == 1):
+                    execute_Viewfile(entry_size.get(), nType, nSeed)
              break
         except ValueError:
              messagebox.showwarning("경고","Size X Size, Random Seed는 1 이상의 정수만 입력 가능합니다.")
              break
 
 
-def execute_LearningSet_Ver(nSize, nPattern, nSeed, bSTL):
-    os.system( "python3 LearningSet_Ver.py {Size} {Pattern} {Seed} {Show}".format(Size=nSize, Pattern=nPattern, Seed=nSeed, Show=bSTL))
+def execute_LearningSet_Ver( nSize, nPattern, nSeed):
+    testSet = KIMS3DPLearningset.Randomset(nSize, nSize, nPattern, nSeed)
+    testSet.generate()
+
+#    os.system( "python3 LearningSet_Ver.py {Size} {Pattern} {Seed} {Show}".format(Size=nSize, Pattern=nPattern, Seed=nSeed, Show=bSTL))
 def execute_Viewfile(nSize, nPattern, nSeed):
     strname = "S{size}_T{type}_R{seed}.scad".format(size=nSize, type=nPattern, seed=nSeed)
     print(strname)
-    os.system( "openscad {filename}".format(filename=strname))
+    spath = os.getcwd()
+    os.system('"C:\Program Files\OpenSCAD\openscad.exe" {strname}'.format(spath=spath, strname=strname))
 
 btn= Button(root, text="선택", command=btncmd, bg='#20074f',fg="#eaeaee")
 #btn.pack()

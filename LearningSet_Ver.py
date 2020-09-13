@@ -8,7 +8,6 @@ if len(sys.argv) < 5:
     print('Usage: [size] [number of type] [RandomSeed] [stl making] ')
     sys.exit(1)
 
-
 ## parameter
 Xsize = int(sys.argv[1])
 Ysize = Xsize
