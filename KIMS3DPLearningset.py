@@ -41,7 +41,9 @@ class Randomset:
                 B[i] = B[i] + 2
         print("=======Reshape=====")
         rB = np.reshape(B, (self.Xsize, self.Ysize))
-        Z = rB
+        Z = rA
+        np.savez_compressed (self.strname, Size=rA,Shape= rB)
+
         f = open(self.strname+'.scad', 'w')
         f.write("union(){\n")
         for x in range(0,self.Xsize):
@@ -55,12 +57,9 @@ class Randomset:
                 if rA[x,y] > 0.7 and rA[x,y] < 0.9:
                     Z[x,y]= 1
                 else:
-                    Z[x, y] =0
-
+                    Z[x,y] =0
         f.write("}\n")
         f.close()
-        print(Z)
-
 #if bstlmaking :
 #    outfilename = strname +'.stl'
 #    os.system("openscad -o"+ outfilename +" "+ strname+".scad")

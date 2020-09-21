@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4323cd1-fc8c-4ed8-b227-f71fa29bfc47" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hR1NmZX5zeQSqmgf2TOrVBPoHk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="gui_random" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\gui_random\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="gui_random" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\gui_random\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4323cd1-fc8c-4ed8-b227-f71fa29bfc47" name="Default Changelist" comment="" />
+      <created>1599959053580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599959053580</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599962307977">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="385" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1599962307977" />
+    <state x="1645" y="333" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600108330746">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1645" y="333" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1600108330746" />
+    <state x="711" y="249" key="FileChooserDialogImpl" timestamp="1599959175302">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="711" y="249" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1599959175302" />
+    <state width="1247" height="201" key="GridCell.Tab.0.bottom" timestamp="1600670045757">
+      <screen x="0" y="0" width="1674" height="939" />
+    </state>
+    <state width="1247" height="201" key="GridCell.Tab.0.bottom/0.0.1674.939@0.0.1674.939" timestamp="1600670045757" />
+    <state width="1247" height="201" key="GridCell.Tab.0.bottom/0.0.2493.941@0.0.2493.941" timestamp="1600285600243" />
+    <state width="1247" height="201" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1600202254036" />
+    <state width="1247" height="201" key="GridCell.Tab.0.center" timestamp="1600670045757">
+      <screen x="0" y="0" width="1674" height="939" />
+    </state>
+    <state width="1247" height="201" key="GridCell.Tab.0.center/0.0.1674.939@0.0.1674.939" timestamp="1600670045757" />
+    <state width="1247" height="201" key="GridCell.Tab.0.center/0.0.2493.941@0.0.2493.941" timestamp="1600285600243" />
+    <state width="1247" height="201" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1600202254036" />
+    <state width="1247" height="201" key="GridCell.Tab.0.left" timestamp="1600670045757">
+      <screen x="0" y="0" width="1674" height="939" />
+    </state>
+    <state width="1247" height="201" key="GridCell.Tab.0.left/0.0.1674.939@0.0.1674.939" timestamp="1600670045757" />
+    <state width="1247" height="201" key="GridCell.Tab.0.left/0.0.2493.941@0.0.2493.941" timestamp="1600285600239" />
+    <state width="1247" height="201" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1600202254036" />
+    <state width="1247" height="201" key="GridCell.Tab.0.right" timestamp="1600670045757">
+      <screen x="0" y="0" width="1674" height="939" />
+    </state>
+    <state width="1247" height="201" key="GridCell.Tab.0.right/0.0.1674.939@0.0.1674.939" timestamp="1600670045757" />
+    <state width="1247" height="201" key="GridCell.Tab.0.right/0.0.2493.941@0.0.2493.941" timestamp="1600285600243" />
+    <state width="1247" height="201" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1600202254036" />
+    <state width="1247" height="250" key="GridCell.Tab.1.bottom" timestamp="1599967468030">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1247" height="250" key="GridCell.Tab.1.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599967468030" />
+    <state width="1247" height="250" key="GridCell.Tab.1.center" timestamp="1599967468030">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1247" height="250" key="GridCell.Tab.1.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599967468030" />
+    <state width="1247" height="250" key="GridCell.Tab.1.left" timestamp="1599967468030">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1247" height="250" key="GridCell.Tab.1.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599967468030" />
+    <state width="1247" height="250" key="GridCell.Tab.1.right" timestamp="1599967468030">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1247" height="250" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599967468030" />
+    <state x="432" y="139" key="SettingsEditor" timestamp="1599962674530">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="432" y="139" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1599962674530" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/GUI.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
